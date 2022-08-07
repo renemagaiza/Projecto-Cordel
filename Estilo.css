@@ -1,0 +1,89 @@
+@charset "utf-8";
+@font-face {
+    font-family: font-titulo;
+    src: url("fontes/PassionOne/PassionOne-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: font-corpo;
+    src: url("fontes/Sriracha/Sriracha-Regular.ttf") format("truetype");
+}
+:root{
+    --font1:verdana, sans-serif;
+    --font2: 'font-titulo';
+    --font3: "font-corpo";
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font1);
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    font-family: var(--font2);
+    font-size: 10vw;
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+header > p{
+    padding-bottom: 50px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    text-decoration: underline;
+}
+section{
+    font-family: var(--font3);
+    font-size: 3.5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+}
+section.normal{
+    color: black;
+    background-color: white;
+}
+section.imagem{
+    color: white;
+    background-color: #0000008a;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-attachment: fixed;
+}
+section > p {
+    padding-bottom: 2em;
+}
+section.imagem > p{
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 2px 2px 0px black;
+    background-color: rgba(0, 0, 0, 0.582);
+}
+section#img01{
+    background-image: url("imagens/background001.jpg");
+    background-position: right center;
+    background-size: 100% 100%;
+}
+section#img02{
+    background-image: url("imagens/background002.jpg");
+    background-position: right center;
+    background-size: 100% 100%;
+}
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
